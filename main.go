@@ -12,6 +12,7 @@ import (
 func main() {
 
 	// Create a new Discord session using the provided bot token.
+	log.Println("DISCORD_BOT_TOKEN: ", os.Getenv("DISCORD_BOT_TOKEN"))
 	dg, err := discordgo.New("Bot " + os.Getenv("DISCORD_BOT_TOKEN"))
 	if err != nil {
 		log.Println("error creating Discord session,", err)
