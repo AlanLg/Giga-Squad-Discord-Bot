@@ -43,7 +43,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	if m.Content == "ping" {
-		s.ChannelMessageSend(m.ChannelID, "Tu as une petite bite William!")
+		s.ChannelMessageSend(m.ChannelID, "Pong!")
 	}
 
 	if m.Content == "pong" {
